@@ -41,6 +41,7 @@ async function loadImage() {
         await sleep(100);
     }
 }
+loadImage();
 
 //give emojis to all position
 for(let i = 0; i<position.length; i++){
