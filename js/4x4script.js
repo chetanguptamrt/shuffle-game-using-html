@@ -34,6 +34,11 @@ for(let i=0; i<8; i++){
     }
 }
 
+//load all emojis
+for(let i = 0; i<position.length; i++) {
+    $("#fargi").attr('src', "../img/"+position[i]+".png");
+}
+
 //give emojis to all position
 for(let i = 0; i<position.length; i++){
     $(".emoji-"+(i+1)).css('background-image', "url('../img/question.png')");
