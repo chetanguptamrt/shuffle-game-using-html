@@ -47,7 +47,6 @@ for(let i=0; i<24; i++){
 async function loadImage() {
     for(let i = 0; i<position.length; i++) {
         $("#fargi").attr('src', "../img/"+position[i]+".png");
-        await sleep(100);
     }
   console.log("done");
 }
