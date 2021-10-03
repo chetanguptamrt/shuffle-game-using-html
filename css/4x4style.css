@@ -1,0 +1,48 @@
+.game-tr {
+    border: 10px solid black;
+}
+.game-td {
+    border: 10px solid black;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    padding: 10px !important;
+}
+.emoji {
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+@media only screen and (max-width:600px) {
+    .game-tr {
+        border: 8px solid black;
+    }
+    .game-td {
+        border: 8px solid black;
+        width: 70px;
+        height: 70px;
+        padding: 7px !important;
+    }
+    .emoji {
+        width: 70px;
+        height: 70px;
+    }
+}
+@media only screen and (max-width:450px) {
+    .game-tr {
+        border: 5px solid black;
+    }
+    .game-td {
+        border: 5px solid black;
+        width: 55px;
+        height: 55px;
+        padding: 5px !important;
+    }
+    .emoji {
+        width: 55px;
+        height: 55px;
+    }
+}

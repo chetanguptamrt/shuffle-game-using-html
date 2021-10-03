@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>6x6 Shuffle Game</title>
+    <link rel="stylesheet" href="../css/6x6style.css">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Shuffle Game</a>
+        <a class="btn btn-outline-light" href="https://github.com/chetanguptamrt/shuffle-game-using-html/" target="_blank">Source code</a>
+    </nav>
+
+    <div class="container-md mt-3 mb-5">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center">6x6 Shuffle Game</h3>
+                <h6 class="text-center">Total Moves: <span id="score">0</span></h6>
+            </div>
+            <div class="col-md-10 offset-md-1">
+                <table class="table">
+                    <tbody>
+                        <tr class="game-tr">
+                            <td class="game-td-1 game-td">
+                                <div class="emoji emoji-1 mx-auto"></div>
+                            </td>
+                            <td class="game-td-2 game-td">
+                                <div class="emoji emoji-2 mx-auto"></div>
+                            </td>
+                            <td class="game-td-3 game-td">
+                                <div class="emoji emoji-3 mx-auto"></div>
+                            </td>
+                            <td class="game-td-4 game-td">
+                                <div class="emoji emoji-4 mx-auto"></div>
+                            </td>
+                            <td class="game-td-5 game-td">
+                                <div class="emoji emoji-5 mx-auto"></div>
+                            </td>
+                            <td class="game-td-6 game-td">
+                                <div class="emoji emoji-6 mx-auto"></div>
+                            </td>
+                        </tr>
+                        <tr class="game-tr">
+                            <td class="game-td-7 game-td">
+                                <div class="emoji emoji-7 mx-auto"></div>
+                            </td>
+                            <td class="game-td-8 game-td">
+                                <div class="emoji emoji-8 mx-auto"></div>
+                            </td>
+                            <td class="game-td-9 game-td">
+                                <div class="emoji emoji-9 mx-auto"></div>
+                            </td>
+                            <td class="game-td-10 game-td">
+                                <div class="emoji emoji-10 mx-auto"></div>
+                            </td>
+                            <td class="game-td-11 game-td">
+                                <div class="emoji emoji-11 mx-auto"></div>
+                            </td>
+                            <td class="game-td-12 game-td">
+                                <div class="emoji emoji-12 mx-auto"></div>
+                            </td>
+                        </tr>
+                        <tr class="game-tr">
+                            <td class="game-td-13 game-td">
+                                <div class="emoji emoji-13 mx-auto"></div>
+                            </td>
+                            <td class="game-td-14 game-td">
+                                <div class="emoji emoji-14 mx-auto"></div>
+                            </td>
+                            <td class="game-td-15 game-td">
+                                <div class="emoji emoji-15 mx-auto"></div>
+                            </td>
+                            <td class="game-td-16 game-td">
+                                <div class="emoji emoji-16 mx-auto"></div>
+                            </td>
+                            <td class="game-td-17 game-td">
+                                <div class="emoji emoji-17 mx-auto"></div>
+                            </td>
+                            <td class="game-td-18 game-td">
+                                <div class="emoji emoji-18 mx-auto"></div>
+                            </td>
+                        </tr>
+                        <tr class="game-tr">
+                            <td class="game-td-19 game-td">
+                                <div class="emoji emoji-19 mx-auto"></div>
+                            </td>
+                            <td class="game-td-20 game-td">
+                                <div class="emoji emoji-20 mx-auto"></div>
+                            </td>
+                            <td class="game-td-21 game-td">
+                                <div class="emoji emoji-21 mx-auto"></div>
+                            </td>
+                            <td class="game-td-22 game-td">
+                                <div class="emoji emoji-22 mx-auto"></div>
+                            </td>
+                            <td class="game-td-23 game-td">
+                                <div class="emoji emoji-23 mx-auto"></div>
+                            </td>
+                            <td class="game-td-24 game-td">
+                                <div class="emoji emoji-24 mx-auto"></div>
+                            </td>
+                        </tr>
+                        <tr class="game-tr">
+                            <td class="game-td-25 game-td">
+                                <div class="emoji emoji-25 mx-auto"></div>
+                            </td>
+                            <td class="game-td-26 game-td">
+                                <div class="emoji emoji-26 mx-auto"></div>
+                            </td>
+                            <td class="game-td-27 game-td">
+                                <div class="emoji emoji-27 mx-auto"></div>
+                            </td>
+                            <td class="game-td-28 game-td">
+                                <div class="emoji emoji-28 mx-auto"></div>
+                            </td>
+                            <td class="game-td-29 game-td">
+                                <div class="emoji emoji-29 mx-auto"></div>
+                            </td>
+                            <td class="game-td-30 game-td">
+                                <div class="emoji emoji-30 mx-auto"></div>
+                            </td>
+                        </tr>
+                        <tr class="game-tr">
+                            <td class="game-td-31 game-td">
+                                <div class="emoji emoji-31 mx-auto"></div>
+                            </td>
+                            <td class="game-td-32 game-td">
+                                <div class="emoji emoji-32 mx-auto"></div>
+                            </td>
+                            <td class="game-td-33 game-td">
+                                <div class="emoji emoji-33 mx-auto"></div>
+                            </td>
+                            <td class="game-td-34 game-td">
+                                <div class="emoji emoji-34 mx-auto"></div>
+                            </td>
+                            <td class="game-td-35 game-td">
+                                <div class="emoji emoji-35 mx-auto"></div>
+                            </td>
+                            <td class="game-td-36 game-td">
+                                <div class="emoji emoji-36 mx-auto"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 mt-1">
+                <h6 class="text-center font-weight-bold text-danger">Enjoy The Game</h6>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/6x6script.js"></script>
+</body>
+
+</html>
