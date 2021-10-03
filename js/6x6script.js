@@ -49,6 +49,7 @@ async function loadImage() {
         $("#fargi").attr('src', "../img/"+position[i]+".png");
         await sleep(100);
     }
+  console.log("done");
 }
 loadImage();
 
