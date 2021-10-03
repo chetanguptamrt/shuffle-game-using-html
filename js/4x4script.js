@@ -35,8 +35,11 @@ for(let i=0; i<8; i++){
 }
 
 //load all emojis
-for(let i = 0; i<position.length; i++) {
-    $("#fargi").attr('src', "../img/"+position[i]+".png");
+async function loadImage() {
+    for(let i = 0; i<position.length; i++) {
+        $("#fargi").attr('src', "../img/"+position[i]+".png");
+        await sleep(100);
+    }
 }
 
 //give emojis to all position
